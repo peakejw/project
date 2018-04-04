@@ -1,6 +1,7 @@
 package e.wyattpeake.synonym;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -37,6 +38,13 @@ public class EnterValues extends Activity{
             w.setWord2(word2);
 
            helper.insertContact(w);
+
+
+            Intent i = new Intent(EnterValues.this, MainActivity.class);
+
+            startActivity(i);
+
+
 
 
         }
